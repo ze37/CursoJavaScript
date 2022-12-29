@@ -6,29 +6,12 @@
     font-size: large;
 }
 
-.valor{
+.caixa{
+    border: 5px solid #000;
+    width: 400px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     margin: 5px;
-    
-}
-
-.valor input{
     padding: 5px;
-    background-color: #ddd;
-    border-radius: 10px;
-}
-.operacoes{
-    display: flex;
-}
-
-button{
-  
-    
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    padding: 5px 10px;
-    display: flex;
-    margin: 5px;
-    cursor: pointer;
 }
