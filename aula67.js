@@ -1,26 +1,16 @@
+function Animal(name,age){
+  this.name = name
+  this.age = age
+}  
 
-class Npc{
-  static alerta = false
-  constructor(energia){
-    this.energia = energia
-  }
-  info(){
-
-    console.log(`Energia : ${this.energia}`)
-    console.log(`alerta : ${(Npc.alerta ?"sim":"Não")}`)
-    console.log("----------------")
-  }
-  static alertar=function(){
-    Npc.alerta=true
-  }
+// Adição de uma propriedade 
+Animal.prototype.speak = function(){
+  console.log(`O animal ${this.name} fala e tem ${this.age}`)
 }
-const npc1 = new Npc(100)
-const npc2 = new Npc(20)
-const npc3 = new Npc(300)
 
-Npc.alertar()
-npc1.info()
-npc2.info()
-npc3.info()
+// Criação de um novo objeto animal chamdo "dog"
 
-
+const dog =new Animal("dog",5)
+const vaca = new Animal("vaca",10)
+dog.speak()
+vaca.speak()
